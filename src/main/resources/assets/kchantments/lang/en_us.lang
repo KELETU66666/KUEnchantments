@@ -1,0 +1,17 @@
+#item
+item.kchantments:baguette.name=Baguette
+
+#enchantment
+enchantment.sword_splash=Splash
+enchantment.extravagance=Extravagance
+enchantment.bronze_teeth=Bronze Teeth
+enchantment.restricted_view=Restricted View
+
+#enchantments
+enchantment.kchantments.sword_splash.desc=Release a splash to your targets.
+enchantment.kchantments.extravagance.desc=All blocks you mine will transform to experience.
+enchantment.kchantments.bronze_teeth.desc=You can eat this item as a food.
+enchantment.kchantments.restricted_view.desc=Your view will be blocked by your helmet.
+
+#entities
+entity.sword_splash.name=Splash

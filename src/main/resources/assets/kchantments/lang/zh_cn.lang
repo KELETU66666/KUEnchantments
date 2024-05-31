@@ -1,0 +1,17 @@
+#物品
+item.kchantments:baguette.name=法棍
+
+#附魔
+enchantment.sword_splash=剑气
+enchantment.extravagance=挥霍无度
+enchantment.bronze_teeth=食铁生
+enchantment.restricted_view=视野受限
+
+#附魔描述
+enchantment.kchantments.sword_splash.desc=向你的目标释放一道剑气。
+enchantment.kchantments.extravagance.desc=使用此物品开采的产物将全部转换为经验。
+enchantment.kchantments.bronze_teeth.desc=你可以吃掉这个物品。
+enchantment.kchantments.restricted_view.desc=你的视野将会被帽子挡住一部分。
+
+#生物/实体
+entity.sword_splash.name=剑气

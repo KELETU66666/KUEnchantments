@@ -1,0 +1,12 @@
+[{
+	"modid": "kchantments",
+	"name": "Keletu's Enchantments",
+	"version": "0.0.1",
+	"mcversion": "1.12.2",
+	"description": "a mod adds some ridiculous enchantments",
+	"authorList": ["keletu"],
+	"credits": "",
+	"url": "",
+	"updateJSON": "",
+	"logoFile": ""
+}]
