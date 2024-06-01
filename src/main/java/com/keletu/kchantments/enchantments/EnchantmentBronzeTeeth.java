@@ -1,7 +1,6 @@
 package com.keletu.kchantments.enchantments;
 
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.inventory.EntityEquipmentSlot;
 
 public class EnchantmentBronzeTeeth extends Enchantment {

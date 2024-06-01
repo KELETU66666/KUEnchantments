@@ -1,5 +1,6 @@
 package com.keletu.kchantments.event;
 
+import com.keletu.kchantments.BaguetteFixRecipe;
 import com.keletu.kchantments.ConfigKE;
 import com.keletu.kchantments.Kchantments;
 import com.keletu.kchantments.Reference;
@@ -19,21 +20,30 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
-import net.minecraftforge.client.event.GuiScreenEvent;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod.EventBusSubscriber(modid = Reference.MOD_ID)
 public class Kevents {
+
+    @SubscribeEvent
+    public static void registerRecipes(RegistryEvent.Register<IRecipe> evt) {
+        IForgeRegistry<IRecipe> r = evt.getRegistry();
+
+        r.register(new BaguetteFixRecipe().setRegistryName(new ResourceLocation(Reference.MOD_ID, "baguette_fix")));
+    }
 
     @SubscribeEvent
     public static void SwordUseEvent(PlayerInteractEvent.LeftClickEmpty event) {

@@ -1,14 +1,13 @@
 package com.keletu.kchantments.enchantments;
 
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.inventory.EntityEquipmentSlot;
 
-public class EnchantmentExtravagance extends Enchantment {
-    public EnchantmentExtravagance() {
-        super(Rarity.VERY_RARE, EnumEnchantmentType.DIGGER, new EntityEquipmentSlot[]{EntityEquipmentSlot.MAINHAND});
-        this.setRegistryName("extravagance");
-        this.setName("extravagance");
+public class EnchantmentRecycle extends Enchantment {
+    public EnchantmentRecycle() {
+        super(Rarity.VERY_RARE, KEnchantmentList.BAGUETTE, new EntityEquipmentSlot[]{EntityEquipmentSlot.MAINHAND});
+        this.setRegistryName("recycle");
+        this.setName("recycle");
     }
 
     @Override
@@ -27,13 +26,8 @@ public class EnchantmentExtravagance extends Enchantment {
     }
 
     public boolean isTreasureEnchantment() {
-        return false;
+        return true;
     }
-
-    public boolean isCurse() {
-        return false;
-    }
-
     @Override
     public int getMaxLevel() {
         return 1;

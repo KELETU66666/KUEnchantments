@@ -6,12 +6,22 @@ enchantment.sword_splash=剑气
 enchantment.extravagance=挥霍无度
 enchantment.bronze_teeth=食铁生
 enchantment.restricted_view=视野受限
+enchantment.hot_potato=烫手土豆
+enchantment.yummy=美味
+enchantment.microwave_heating=微波加热
+enchantment.hard_like_a_rock=硬如磐石
+enchantment.recycle=循环利用
 
 #附魔描述
 enchantment.kchantments.sword_splash.desc=向你的目标释放一道剑气。
 enchantment.kchantments.extravagance.desc=使用此物品开采的产物将全部转换为经验。
 enchantment.kchantments.bronze_teeth.desc=你可以吃掉这个物品。
 enchantment.kchantments.restricted_view.desc=你的视野将会被帽子挡住一部分。
+enchantment.kchantments.hot_potato.desc=你开始疾跑就无法停止。
+enchantment.kchantments.yummy.desc=使你的法棍更有营养。
+enchantment.kchantments.microwave_heating.desc=法棍可以点燃目标。
+enchantment.kchantments.hard_like_a_rock.desc=增加法棍的硬度，使它更像一块石头。
+enchantment.kchantments.recycle.desc=法棍在用尽后会留下包装袋。
 
 #生物/实体
 entity.sword_splash.name=剑气

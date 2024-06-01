@@ -6,12 +6,21 @@ enchantment.sword_splash=Splash
 enchantment.extravagance=Extravagance
 enchantment.bronze_teeth=Bronze Teeth
 enchantment.restricted_view=Restricted View
+enchantment.hot_potato=Hot Potato
+enchantment.yummy=Yummy =w=
+enchantment.microwave_heating=Microwave Heating
+enchantment.hard_like_a_rock=Hard-Like-a-Rock
+enchantment.recycle=Recycle
 
 #enchantments
 enchantment.kchantments.sword_splash.desc=Release a splash to your targets.
 enchantment.kchantments.extravagance.desc=All blocks you mine will transform to experience.
 enchantment.kchantments.bronze_teeth.desc=You can eat this item as a food.
 enchantment.kchantments.restricted_view.desc=Your view will be blocked by your helmet.
-
+enchantment.kchantments.hot_potato.desc=Your cannot stop running.
+enchantment.kchantments.yummy.desc=Eat Baguette will regenerate more hunger and saturation.
+enchantment.kchantments.microwave_heating.desc=Baguette can ignite target.
+enchantment.kchantments.hard_like_a_rock.desc=Add Baguette's minimum damage
+enchantment.kchantments.recycle.desc=Baguette will not disappear after run out of durations.
 #entities
 entity.sword_splash.name=Splash

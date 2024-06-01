@@ -1,6 +1,5 @@
 package com.keletu.kchantments.enchantments;
 
-
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.init.Enchantments;
