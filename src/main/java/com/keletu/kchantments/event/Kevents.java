@@ -6,13 +6,9 @@ import com.keletu.kchantments.Kchantments;
 import com.keletu.kchantments.Reference;
 import com.keletu.kchantments.enchantments.KEnchantmentList;
 import com.keletu.kchantments.packet.PacketSummonGhostSword;
+import com.keletu.kchantments.proxy.ClientProxy;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.ScaledResolution;
-import net.minecraft.client.renderer.BufferBuilder;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;
@@ -75,11 +71,9 @@ public class Kevents {
         }
     }
 
-    @SubscribeEvent
     @SideOnly(Side.CLIENT)
+    @SubscribeEvent
     public static void RestrictedViews(RenderGameOverlayEvent event){
-        ScaledResolution scaledresolution = new ScaledResolution(Minecraft.getMinecraft());
-
         if(Minecraft.getMinecraft().player == null)
             return;
 
@@ -90,30 +84,8 @@ public class Kevents {
 
         if (Minecraft.getMinecraft().gameSettings.thirdPersonView == 0 && EnchantmentHelper.getEnchantmentLevel(KEnchantmentList.restrictedView, itemstack) > 0 && !ConfigKE.restrictBlacklist.contains(itemstack.getItem().getRegistryName()))
         {
-            renderRestrictedViewOverlay(scaledresolution);
+            ClientProxy.renderRestrictedViewOverlay(event.getResolution());
         }
-    }
-
-    protected static void renderRestrictedViewOverlay(ScaledResolution scaledRes)
-    {
-        GlStateManager.disableDepth();
-        GlStateManager.depthMask(false);
-        GlStateManager.tryBlendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-        GlStateManager.disableAlpha();
-        Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation(Reference.MOD_ID, "textures/gui/helmblur.png"));
-        Tessellator tessellator = Tessellator.getInstance();
-        BufferBuilder bufferbuilder = tessellator.getBuffer();
-        bufferbuilder.begin(7, DefaultVertexFormats.POSITION_TEX);
-        bufferbuilder.pos(0.0D, scaledRes.getScaledHeight(), -90.0D).tex(0.0D, 1.0D).endVertex();
-        bufferbuilder.pos(scaledRes.getScaledWidth(), scaledRes.getScaledHeight(), -90.0D).tex(1.0D, 1.0D).endVertex();
-        bufferbuilder.pos(scaledRes.getScaledWidth(), 0.0D, -90.0D).tex(1.0D, 0.0D).endVertex();
-        bufferbuilder.pos(0.0D, 0.0D, -90.0D).tex(0.0D, 0.0D).endVertex();
-        tessellator.draw();
-        GlStateManager.depthMask(true);
-        GlStateManager.enableDepth();
-        GlStateManager.enableAlpha();
-        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     @SubscribeEvent
