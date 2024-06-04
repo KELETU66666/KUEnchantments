@@ -6,7 +6,7 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 
 public class EnchantmentRestrictedView extends Enchantment {
     public EnchantmentRestrictedView() {
-        super(Rarity.VERY_RARE, EnumEnchantmentType.ARMOR_HEAD, new EntityEquipmentSlot[]{EntityEquipmentSlot.MAINHAND});
+        super(Rarity.VERY_RARE, EnumEnchantmentType.ARMOR_HEAD, new EntityEquipmentSlot[]{EntityEquipmentSlot.HEAD});
         this.setRegistryName("restricted_view");
         this.setName("restricted_view");
     }

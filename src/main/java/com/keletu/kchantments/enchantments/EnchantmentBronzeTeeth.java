@@ -5,7 +5,7 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 
 public class EnchantmentBronzeTeeth extends Enchantment {
     public EnchantmentBronzeTeeth() {
-        super(Rarity.VERY_RARE, KEnchantmentList.IRON_GEAR, new EntityEquipmentSlot[]{EntityEquipmentSlot.MAINHAND});
+        super(Rarity.VERY_RARE, KEnchantmentList.IRON_GEAR, new EntityEquipmentSlot[]{EntityEquipmentSlot.HEAD, EntityEquipmentSlot.CHEST, EntityEquipmentSlot.LEGS, EntityEquipmentSlot.FEET});
         this.setRegistryName("bronze_teeth");
         this.setName("bronze_teeth");
     }

@@ -2,6 +2,7 @@ package com.keletu.kchantments;
 
 import com.keletu.kchantments.entities.EntitySplash;
 import com.keletu.kchantments.item.ItemBaguette;
+import com.keletu.kchantments.packet.PacketRageParticles;
 import com.keletu.kchantments.packet.PacketSummonGhostSword;
 import com.keletu.kchantments.proxy.CommonProxy;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -45,6 +46,7 @@ public class Kchantments {
 
         packetInstance = NetworkRegistry.INSTANCE.newSimpleChannel("KEChannel");
         packetInstance.registerMessage(PacketSummonGhostSword.Handler.class, PacketSummonGhostSword.class, 0, Side.SERVER);
+        packetInstance.registerMessage(PacketRageParticles.Handler.class, PacketRageParticles.class, 1, Side.CLIENT);
 
         EntityRegistry.registerModEntity(new ResourceLocation(Reference.MOD_ID + ":" + "splash"), EntitySplash.class, "sword_splash", 0, this, 32, 1, true);
         proxy.preInit(event);

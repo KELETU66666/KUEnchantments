@@ -11,7 +11,7 @@
  *
  * File Created @ [8 Sep 2013, 19:36:25 (GMT)]
  */
-package com.keletu.kchantments;
+package com.keletu.kchantments.util;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTBase;

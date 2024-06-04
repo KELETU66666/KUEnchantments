@@ -11,6 +11,10 @@ enchantment.yummy=Yummy =w=
 enchantment.microwave_heating=Microwave Heating
 enchantment.hard_like_a_rock=Hard-Like-a-Rock
 enchantment.recycle=Recycle
+enchantment.night_terrors=Night Terrors
+enchantment.sedation=Sedation
+enchantment.furious=Furious
+enchantment.elbowing=Dashing
 
 #enchantments
 enchantment.kchantments.sword_splash.desc=Release a splash to your targets.
@@ -22,5 +26,10 @@ enchantment.kchantments.yummy.desc=Eat Baguette will regenerate more hunger and 
 enchantment.kchantments.microwave_heating.desc=Baguette can ignite target.
 enchantment.kchantments.hard_like_a_rock.desc=Add Baguette's minimum damage
 enchantment.kchantments.recycle.desc=Baguette will not disappear after run out of durations.
+enchantment.kchantments.night_terrors.desc=You will automatically ignite nearby blocks if in darkness.
+enchantment.kchantments.sedation.desc=Add your normal attack damage.
+enchantment.kchantments.furious.desc=Add your critical attack damage.
+enchantment.kchantments.elbowing.desc=Add your dashing attack damage.
+
 #entities
 entity.sword_splash.name=Splash

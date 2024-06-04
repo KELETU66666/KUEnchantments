@@ -22,7 +22,10 @@ public class KEnchantmentList {
     public static final Enchantment microwaveHeating = new EnchantmentMicrowaveHeating();
     public static final Enchantment harden = new EnchantmentHarden();
     public static final Enchantment recycle = new EnchantmentRecycle();
-   // public static final Enchantment hotPotato = new EnchantmentHotPotato();
+    public static final Enchantment nightTerrors = new EnchantmentNightTerrors();
+    public static final Enchantment elbowing = new EnchantmentElbowing();
+    public static final Enchantment furious = new EnchantmentFurious();
+    public static final Enchantment sedation = new EnchantmentSedation();
     public static void setupEnchatments(){
         ForgeRegistries.ENCHANTMENTS.register(swordSplash);
         ForgeRegistries.ENCHANTMENTS.register(extravagance);
@@ -32,6 +35,9 @@ public class KEnchantmentList {
         ForgeRegistries.ENCHANTMENTS.register(microwaveHeating);
         ForgeRegistries.ENCHANTMENTS.register(harden);
         ForgeRegistries.ENCHANTMENTS.register(recycle);
-    //    ForgeRegistries.ENCHANTMENTS.register(hotPotato);
+        ForgeRegistries.ENCHANTMENTS.register(nightTerrors);
+        ForgeRegistries.ENCHANTMENTS.register(elbowing);
+        ForgeRegistries.ENCHANTMENTS.register(furious);
+        ForgeRegistries.ENCHANTMENTS.register(sedation);
     }
 }

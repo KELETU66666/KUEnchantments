@@ -61,6 +61,11 @@ public class ItemBaguette extends Item {
         });
     }
 
+    public boolean isEnchantable(ItemStack stack)
+    {
+        return true;
+    }
+
     public int getMaxItemUseDuration(ItemStack stack) {
         return 16;
     }

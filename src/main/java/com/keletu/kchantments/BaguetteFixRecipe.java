@@ -2,6 +2,7 @@ package com.keletu.kchantments;
 
 import com.keletu.kchantments.item.ItemBaguette;
 import static com.keletu.kchantments.item.ItemBaguette.*;
+import com.keletu.kchantments.util.ItemNBTHelper;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
@@ -28,11 +29,9 @@ public class BaguetteFixRecipe extends IForgeRegistryEntry.Impl<IRecipe> impleme
 			if(!stack.isEmpty()) {
 				if(stack.getItem() == Items.BREAD && !foundBread)
 					foundBread = true;
-				else if(!foundItem) {
-					if(stack.getItem() instanceof ItemBaguette)
-						foundItem = true;
-					else return false;
-				}
+				else if(stack.getItem() instanceof ItemBaguette && (getNBTDurability(stack) <= 0 || getNBTUse(stack) <= 0) && !foundItem)
+					foundItem = true;
+				else return false;
 			}
 		}
 
@@ -54,7 +53,7 @@ public class BaguetteFixRecipe extends IForgeRegistryEntry.Impl<IRecipe> impleme
 
 		ItemStack copy = item.copy();
 		ItemNBTHelper.setInt(copy, NBTTAG_DURABILITY, MaxDurability);
-		ItemNBTHelper.setInt(copy, NBTTAG_LEFT, MaxUse);
+		ItemNBTHelper.setInt(copy, NBTTAG_LEFT, Math.min(MaxUse, getNBTUse(copy) + 5));
 		return copy;
 	}
 

@@ -11,6 +11,10 @@ enchantment.yummy=美味
 enchantment.microwave_heating=微波加热
 enchantment.hard_like_a_rock=硬如磐石
 enchantment.recycle=循环利用
+enchantment.night_terrors=黑暗恐惧
+enchantment.sedation=镇静
+enchantment.furious=狂怒
+enchantment.elbowing=冲刺
 
 #附魔描述
 enchantment.kchantments.sword_splash.desc=向你的目标释放一道剑气。
@@ -22,6 +26,10 @@ enchantment.kchantments.yummy.desc=使你的法棍更有营养。
 enchantment.kchantments.microwave_heating.desc=法棍可以点燃目标。
 enchantment.kchantments.hard_like_a_rock.desc=增加法棍的硬度，使它更像一块石头。
 enchantment.kchantments.recycle.desc=法棍在用尽后会留下包装袋。
+enchantment.kchantments.night_terrors.desc=身处黑暗中，你会随机在身边点火。
+enchantment.kchantments.sedation.desc=增加你的普通攻击伤害。
+enchantment.kchantments.furious.desc=增加你的暴击攻击伤害。
+enchantment.kchantments.elbowing.desc=增加你的冲刺攻击伤害。
 
 #生物/实体
 entity.sword_splash.name=剑气
